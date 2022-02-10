@@ -1,4 +1,4 @@
-# Unity ML Agent: DuffBall team play
+# Unity ML Agent: DuffBall Team Play
 
 A review of Unity ML Agents to train Agents in a simple Team play environment.  The intention is to review ML Agents playing a soccer like game, but with Tactical level Observaitons and Actions, rather than the typically base Movement/ Rotations level Actions in used in many Unity ML examples.  Hopefully the Training will then be faster and more robust.  
 
@@ -35,7 +35,7 @@ This Observation and Action Space was identified as being sufficient for a logic
 
 There are no local Raycast based sensors etc. 
 
-Sicne this is now (Collaborative) Unity Team Training. The rewards are Alloocated on a Group basis.  The GameControl.cs script manages the resigration of ML Team Groups and the assignment of Group Rewards. The Team Groups are set up and Registered via RegisterAgent() calls.  In Experiment A, with only the Blue Team being Trained, only the Blue Team players are Registered. In Experiment B, with Self Play, both Team need to be Regsistered, into two Groups, with each Agent assigned with their corresponding Team id.
+Since this is now (Collaborative) Unity Team Training. The rewards are Allocated on a Group basis.  The GameControl.cs script manages the resigration of ML Team Groups and the assignment of Group Rewards. The Team Groups are set up and Registered via RegisterAgent() calls.  In Experiment A, with only the Blue Team being Trained, only the Blue Team players are Registered. In Experiment B, with Self Play, both Team need to be Regsistered, into two Groups, with each Agent assigned with their corresponding Team id.
 
 The Group Rewards are then:
 - AddGroupReward(1 - 0.5f*(float)DecisionCounter / MaxNumberOfDecisions);     For a Goal Scored by Own side, with a penalty for length of game (Decsion Count)
@@ -86,7 +86,7 @@ Happy for Any Discusssion, Comments and Improvements.
 
 ## Download and Use
 
-I have captured and exported a Unity Package the DuffBall Scene, Scripts, Models etc. I am not so familiar with Unity Package export/ imports, so hopefully this is the most convenient way to import into your Unity Projects.   This can be downladed and imported into Unity, or possibly via the Unity Git import directly by reference to the .json file from the Unity Package Manager.  You will also need to import the Unity ML Agents package to run this(Note this was developed and Tested using Release 19)
+This project has been exported as a Unity Package containing the DuffBall Scene, Scripts, Models etc. I am not so familiar with Unity Package export/ imports, so hopefully this is the most convenient way to import into your Unity Projects.   This can be downladed and imported into Unity, or possibly via the Unity Git import directly by reference to the .json file from the Unity Package Manager.  You will also need to import the Unity ML Agents run time package (Note this project was developed and Tested using Unity ML Agents Release 19)
 
 The default downloaded Unity Project, will execute Experiment B: The Self Play configuration.  To perfom the Curriculum Learning, will require use of the files within the ExpACurriclumFiles Folder.
 
