@@ -80,7 +80,7 @@ self_play:
 - There was very little hassle in experimenting and adjusting the poca hyper parameters. "Good performance" was easily obtained with batch_size: 2024, buffer_size: 20480, hidden_units: 512, time_horizon:512, with the otehr PPO parametrs at the Unity defaults. See the DuffBallMLConfig.yaml file. 
 - However the Agents do not need to develop or perceive any advantage in collaborative play. They can achieve high goal rates simply by the sequence of Pursue, Dribble and Strike actions, with no Passing between team mates!  (This is probably due to passing success rates being rather low in a player congested environment with a colliding dynamic ball verses a low Tackle success rate to maintain game flow!)
 - It was noted that the Agent Players sometimes do not Actively defend, if opposing player is approaching them, and their goal with the Ball
-- Self Play was faster to train than the Curriculum Learning Process. However the resulting play was less diverse, as both teams then adopted the rush to Ball, Dribble and Strike tactic, resulting in clustered and heavily contested game play![image](https://user-images.githubusercontent.com/2668431/153434680-f3f14591-c5e3-471e-83ee-f9955ebd497d.png)
+- Self Play was faster to train than the Curriculum Learning Process. However the resulting play was less diverse, as both teams then adopted the rush to Ball, Dribble and Strike tactic, resulting in clustered and heavily contested game play!
 
 Happy for Any Discusssion, Comments and Improvements.
 
