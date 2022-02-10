@@ -86,9 +86,14 @@ Happy for Any Discusssion, Comments and Improvements.
 
 ## Download and Use
 
-This project has been exported as a Unity Package containing the DuffBall Scene, Scripts, Models etc. I am not so familiar with Unity Package export/ imports, so hopefully this is the most convenient way to import into your Unity Projects.   This can be downladed and imported into Unity, or possibly via the Unity Git import directly by reference to the .json file from the Unity Package Manager.  You will also need to import the Unity ML Agents run time package (Note this project was developed and Tested using Unity ML Agents Release 19)
+This project has been exported as a Unity Package into the UnityDFuffball folder containing the DuffBall Scene, Scripts, Models etc. I am not so familiar with Unity Package export/ imports, so hopefully this is the most convenient way to import into your Unity Projects.   This can be downladed and imported into Unity, or possibly via the Unity Git import directly by reference to the .json file from the Unity Package Manager.  You will also need to import the Unity ML Agents run time package (Note this project was developed and Tested using Unity ML Agents Release 19)
 
-The default downloaded Unity Project, will execute Experiment B: The Self Play configuration.  To perfom the Curriculum Learning, will require use of the files within the ExpACurriclumFiles Folder.
+The Scripts and configuration file associated and used within Experiment A are ExpACurriclumFiles Folder.
+The Scripts and configuration file associated and used within Experiment B are ExpBSelfTrain Folder.
+
+The Trained Brains .onxx files for both the Self Trained and the Curriculum learned ML Agents are in the Brains Folder. These can be copied into the ML Agents behaviour components to observe the trained behaviours. 
+
+The default downloaded Unity Project, will execute Experiment B: The Self Play configuration.  To perfom the Curriculum Learning, will require use of the files within the ExpACurriclumFiles Folder. 
 
 ## Acknowledgements  
 
