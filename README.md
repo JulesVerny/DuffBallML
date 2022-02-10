@@ -2,7 +2,7 @@
 
 A review of Unity ML Agents to train Agents in a simple Team play environment.  The intention is to review ML Agents playing a soccer like game, but with Tactical level Observaitons and Actions, rather than the typically base Movement/ Rotations level Actions in used in many Unity ML examples.  Hopefully the Training will then be faster and more robust.  
 
-Please see the results of the Trained Duff Ball Agents playing reasonably well at << You Tube Reference >>
+Please see the results of the Trained Duff Ball Agents playing reasonably well on You Tube at https://youtu.be/rVemVNnVl8I
 
 The results are as expected. The Tactical level Reinforcement Learning results in Faster and More robust Training to achieve reasonably good player performance. However the Agents did not learn any need to perform any collaborative play. Their Goal Rewards could be achieved without any collaboration due to the environmental features. Self Play was even more robust, and faster to train however the gameplays were not as diverse (Same rush/ converge tacticsaby both sides. 
 
@@ -74,6 +74,8 @@ self_play:
       initial_elo: 1200.0
 
 ## Conclusions
+
+See Trained Duff Ball Agent Play on You Tube at https://youtu.be/rVemVNnVl8I
 
 - As expected, training Agents at a Tactical level, is a much faster and more robust Training experience than getting low level movement/rotation action agents to perform. 
 - Adequate ML Agent performance can be achived within 5 Million Steps. 
